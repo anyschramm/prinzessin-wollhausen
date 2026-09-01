@@ -4,32 +4,26 @@ const products = [
   {
     name: 'Pulswärmer',
     description: 'Kuschelig warm für kalte Tage – in vielen liebevollen Mustern.',
-    image: '/images/pulswaermer.png',
-    alt: 'Handgestrickte Pulswärmer mit rot-weißem Norwegermuster auf einem Holztisch',
+    image: '/images/pulswaermer.jpeg',
+    alt: 'Handgestrickte Pulswärmer mit rot-weißem Norwegermuster an den Händen',
   },
   {
     name: 'Mützen',
     description: 'Weiche, warme Mützen in fröhlichen Farben für jeden Kopf.',
-    image: '/images/muetzen.png',
-    alt: 'Drei handgestrickte Mützen in Beere, Senfgelb und Rosa',
-  },
-  {
-    name: 'Stirnbänder',
-    description: 'Elegante Stirnbänder, die Ohren und Herz warm halten.',
-    image: '/images/stirnband.png',
-    alt: 'Handgestricktes Stirnband mit Zopfmuster in Altrosa',
+    image: '/images/muetzen.jpeg',
+    alt: 'Vier handgestrickte Mützen in Rot, Pink, Senfgelb und Beere',
   },
   {
     name: 'Decken',
     description: 'Gemütliche Häkeldecken mit fröhlichen Blütenmotiven.',
-    image: '/images/decken.png',
+    image: '/images/decke.jpeg',
     alt: 'Bunte gehäkelte Granny-Square-Decke mit Blütenmuster',
   },
   {
     name: 'Lesezeichen',
     description: 'Kleine gehäkelte Begleiter für deine liebsten Bücher.',
-    image: '/images/lesezeichen.png',
-    alt: 'Gehäkeltes Lesezeichen mit Blütenmotiv in einem aufgeschlagenen Buch',
+    image: '/images/lesezeichen.jpeg',
+    alt: 'Gehäkeltes Blumen-Lesezeichen auf einer Grußkarte',
   },
 ]
 

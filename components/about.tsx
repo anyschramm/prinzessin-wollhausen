@@ -14,8 +14,8 @@ export function About() {
       <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-border lg:mx-0">
           <Image
-            src="/images/ueber-mich.png"
-            alt="Annette strickt mit altrosa Wolle und Holznadeln"
+            src="/images/ueber-mich.jpeg"
+            alt="Bunt gehäkeltes Tuch und Häkelarbeit von PrinzessinWollhausen in Arbeit"
             fill
             sizes="(max-width: 1024px) 100vw, 40vw"
             className="object-cover"

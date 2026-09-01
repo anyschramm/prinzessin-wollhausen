@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 function Heart({ className }: { className?: string }) {
   return (
     <svg
@@ -14,18 +16,14 @@ function Heart({ className }: { className?: string }) {
 export function LogoMark({ className }: { className?: string }) {
   return (
     <div className={className}>
-      <div className="mx-auto flex h-28 w-28 flex-col items-center justify-center rounded-full border border-primary/50 sm:h-32 sm:w-32">
-        <Heart className="mb-1 h-4 w-4 text-primary" />
-        <span className="font-serif text-lg leading-none text-foreground sm:text-xl">
-          Prinzessin
-        </span>
-        <span className="font-serif text-lg leading-none text-foreground sm:text-xl">
-          Wollhausen
-        </span>
-        <span className="mt-2 text-[0.6rem] uppercase tracking-[0.25em] text-primary/80">
-          Handmade with love
-        </span>
-      </div>
+      <Image
+        src="/images/logo.jpeg"
+        alt="PrinzessinWollhausen – Handmade with love"
+        width={320}
+        height={300}
+        priority
+        className="mx-auto h-36 w-auto mix-blend-multiply sm:h-44"
+      />
     </div>
   )
 }
