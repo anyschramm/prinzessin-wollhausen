@@ -97,10 +97,10 @@ export function FindMe() {
           <div className="order-1 mx-auto w-full max-w-sm lg:order-2">
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
               <Image
-                src="/images/flyer.jpeg"
-                alt="Übersicht der handgemachten Produkte von PrinzessinWollhausen"
-                width={900}
-                height={1300}
+                src="/images/shop-collage.jpeg"
+                alt="Bunte Granny-Square-Decken von PrinzessinWollhausen"
+                width={1080}
+                height={1080}
                 className="h-auto w-full"
               />
             </div>

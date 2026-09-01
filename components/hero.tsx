@@ -5,11 +5,9 @@ export function Hero() {
     <header className="relative overflow-hidden px-5 pb-14 pt-12 text-center sm:pb-20 sm:pt-16">
       <LogoMark />
 
-      <h1 className="mt-8 break-words font-serif text-[2rem] font-medium leading-tight tracking-tight text-foreground text-balance sm:text-6xl lg:text-7xl">
-        PrinzessinWollhausen
-      </h1>
+      <h1 className="sr-only">PrinzessinWollhausen</h1>
 
-      <div className="mx-auto mt-3 flex items-center justify-center gap-3">
+      <div className="mx-auto mt-6 flex items-center justify-center gap-3">
         <span className="h-px w-8 bg-primary/40" />
         <Heart className="h-3 w-3 text-primary" />
         <span className="h-px w-8 bg-primary/40" />
