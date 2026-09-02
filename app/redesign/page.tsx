@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Redesign-Vorschau · PrinzessinWollhausen',
-  description: 'Drei Design-Varianten für die neue Startseite von PrinzessinWollhausen im Vergleich.',
+  description: 'Vier Varianten für die Startseite von PrinzessinWollhausen im Vergleich.',
   robots: { index: false, follow: false },
 }
 
@@ -36,6 +36,15 @@ const variants = [
     strengths: ['Maximale Klick-Rate zu Etsy', 'Schnelle Orientierung', 'Viele Vertrauenssignale'],
     accent: 'bg-etsy',
   },
+  {
+    href: '/redesign/d',
+    letter: 'D',
+    name: 'SEO/GEO-optimiert – gleiches Design, nur Ergänzungen',
+    summary:
+      'Kein Redesign: Aufbau, Farben und Sektionen der aktuellen Startseite bleiben unverändert. Ergänzt werden nur eine sichtbare H1 mit Produkt-Unterzeile, ausführlichere Alt-Texte, Vertrauens-Microcopy, ein FAQ-Bereich vor dem Footer sowie vollständige Metadaten und JSON-LD.',
+    strengths: ['Vertrautes Design', 'Nur Ergänzungen', 'Schnell live'],
+    accent: 'bg-sage',
+  },
 ]
 
 export default function RedesignIndexPage() {
@@ -52,17 +61,18 @@ export default function RedesignIndexPage() {
 
         <p className="mt-8 text-xs font-semibold uppercase tracking-[0.3em] text-primary">Vorschau</p>
         <h1 className="mt-3 font-serif text-4xl text-foreground text-balance sm:text-5xl">
-          Drei Design-Varianten für die neue Startseite
+          Vier Varianten für die neue Startseite
         </h1>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground text-pretty">
-          Alle drei Varianten sind vollständige Startseiten mit denselben Inhalten
+          A, B und C sind vollständige Redesigns mit denselben Inhalten
           (Sortiment, Über Any, Kundenstimmen, FAQ), denselben SEO-Metadaten und
           denselben strukturierten Daten – sie unterscheiden sich in Aufbau,
-          Stimmung und Kaufführung. Die aktuelle Startseite bleibt unverändert,
-          bis eine Variante ausgewählt ist.
+          Stimmung und Kaufführung. Variante D behält das aktuelle Design bei und
+          ergänzt nur die SEO/GEO-Bausteine. Die aktuelle Startseite bleibt
+          unverändert, bis eine Variante ausgewählt ist.
         </p>
 
-        <ul className="mt-12 grid gap-6 md:grid-cols-3">
+        <ul className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {variants.map((variant) => (
             <li key={variant.href}>
               <Link
@@ -93,11 +103,11 @@ export default function RedesignIndexPage() {
         </ul>
 
         <section className="mt-14 rounded-2xl border border-border bg-secondary/50 p-6 sm:p-8">
-          <h2 className="font-serif text-2xl text-foreground">Was alle drei Varianten gemeinsam haben</h2>
+          <h2 className="font-serif text-2xl text-foreground">Was alle Varianten gemeinsam haben</h2>
           <ul className="mt-4 grid gap-3 text-sm leading-relaxed text-muted-foreground sm:grid-cols-2">
-            <li>• Mehrfache, gut sichtbare „Zum Etsy-Shop“-Buttons (Header, Hero, Produkte, Abschluss)</li>
+            <li>• Mehrfache „Zum Etsy-Shop“-Links (A–C als Buttons in Header, Hero, Produkten, Abschluss; D wie bisher plus Textlinks)</li>
             <li>• Vertrauenssignale: handgemacht, Unikat, liebevoll verpackt, Made in Germany, kleines Label</li>
-            <li>• Platzhalter für echte Etsy-Bewertungen (vor Livegang austauschen)</li>
+            <li>• A–C: Platzhalter für echte Etsy-Bewertungen (vor Livegang austauschen)</li>
             <li>• Ein einziges H1, saubere Überschriften-Hierarchie, beschreibende Alt-Texte</li>
             <li>• Vollständige Metadaten: Titel, Beschreibung, Keywords, Open Graph, Twitter Card, Canonical</li>
             <li>• JSON-LD: Store/LocalBusiness, Person (Any), ItemList mit Produkten, FAQPage, WebSite</li>
