@@ -24,6 +24,21 @@ export default function ImpressumPage() {
 
       <section>
         <h2 className="font-serif text-xl text-foreground">
+          Kontakt
+        </h2>
+        <p className="mt-3">
+          E-Mail:{' '}
+          <a
+            href="mailto:PrinzessinWollhausen@gmail.com"
+            className="underline transition-colors hover:text-primary"
+          >
+            PrinzessinWollhausen@gmail.com
+          </a>
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-serif text-xl text-foreground">
           Umsatzsteuer
         </h2>
         <p className="mt-3">

@@ -27,7 +27,7 @@ export function About() {
             Über mich
           </p>
           <h2 className="mt-3 font-serif text-3xl font-medium text-foreground text-balance sm:text-4xl">
-            Ich bin Annette – und das ist meine Leidenschaft
+            Ich bin Any – und das ist meine Leidenschaft
           </h2>
           <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground text-pretty">
             <p>
