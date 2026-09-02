@@ -40,7 +40,7 @@ export function AboutD() {
           <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground text-pretty">
             <p>
               Ich stricke und häkle seit vielen Jahren mit Leidenschaft. Aus
-              dieser Leidenschaft ist Prinzessin Wollhausen entstanden – mein
+              dieser Leidenschaft ist PrinzessinWollhausen entstanden – mein
               kleines Handmade-Label aus Ahrensburg in Schleswig-Holstein, bei
               Hamburg.
             </p>

@@ -31,7 +31,7 @@ export function LetterB() {
             </h2>
             <div className="mt-6 space-y-4 text-lg leading-relaxed text-muted-foreground text-pretty">
               <p>
-                Ich bin Any, und Prinzessin Wollhausen ist mein kleines
+                Ich bin Any, und PrinzessinWollhausen ist mein kleines
                 Handmade-Label aus Ahrensburg in Schleswig-Holstein. Seit vielen
                 Jahren stricke und häkle ich mit großer Leidenschaft – erst für
                 Familie und Freundinnen, heute für Menschen in ganz Deutschland.

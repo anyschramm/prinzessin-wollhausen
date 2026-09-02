@@ -10,7 +10,6 @@ export const SITE_URL = (
 
 export const site = {
   name: 'PrinzessinWollhausen',
-  displayName: 'Prinzessin Wollhausen',
   tagline: 'Handmade with love',
   makerName: 'Any',
   makerLegalName: 'Annette Schramm',
@@ -191,12 +190,12 @@ export const testimonials = [
 
 export const faq = [
   {
-    question: 'Was bietet Prinzessin Wollhausen an?',
+    question: 'Was bietet PrinzessinWollhausen an?',
     answer:
-      'Prinzessin Wollhausen ist ein kleines Handmade-Label aus Ahrensburg in Schleswig-Holstein. Ich, Any, stricke und häkle von Hand Pulswärmer, Mützen, Stirnbänder, Decken und Lesezeichen. Jedes Stück ist ein Unikat und wird in kleiner Stückzahl gefertigt.',
+      'PrinzessinWollhausen ist ein kleines Handmade-Label aus Ahrensburg in Schleswig-Holstein. Ich, Any, stricke und häkle von Hand Pulswärmer, Mützen, Stirnbänder, Decken und Lesezeichen. Jedes Stück ist ein Unikat und wird in kleiner Stückzahl gefertigt.',
   },
   {
-    question: 'Wo kann ich die Produkte von Prinzessin Wollhausen kaufen?',
+    question: 'Wo kann ich die Produkte von PrinzessinWollhausen kaufen?',
     answer:
       'Alle verfügbaren Stücke findest du in meinem Etsy-Shop unter prinzessinwollhausen.etsy.com. Dort siehst du aktuelle Preise, Farben und Verfügbarkeit und kannst sicher über Etsy bezahlen.',
   },
@@ -221,9 +220,9 @@ export const faq = [
       'Handgestrickte Stücke am besten per Hand in lauwarmem Wasser mit Wollwaschmittel waschen, nicht wringen und liegend trocknen lassen. So bleiben Form und Farben lange schön.',
   },
   {
-    question: 'Wer steckt hinter Prinzessin Wollhausen?',
+    question: 'Wer steckt hinter PrinzessinWollhausen?',
     answer:
-      'Hinter Prinzessin Wollhausen steht Any aus Ahrensburg bei Hamburg. Aus ihrer langjährigen Leidenschaft fürs Stricken und Häkeln ist das kleine Label entstanden. Sie wählt Garne und Muster selbst aus und fertigt jedes Stück persönlich.',
+      'Hinter PrinzessinWollhausen steht Any aus Ahrensburg bei Hamburg. Aus ihrer langjährigen Leidenschaft fürs Stricken und Häkeln ist das kleine Label entstanden. Sie wählt Garne und Muster selbst aus und fertigt jedes Stück persönlich.',
   },
 ]
 
