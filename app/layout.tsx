@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Cormorant_Garamond, Nunito_Sans } from 'next/font/google'
+import { SITE_URL } from '@/lib/site'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
@@ -16,6 +17,7 @@ const nunito = Nunito_Sans({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: 'PrinzessinWollhausen · Handgemachte Lieblingsstücke',
   description:
     'Liebevoll gestrickte und gehäkelte Accessoires aus Ahrensburg – Pulswärmer, Mützen, Stirnbänder, Decken und Lesezeichen. Jedes Stück ein echtes Unikat.',

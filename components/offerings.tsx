@@ -1,41 +1,34 @@
 import Image from 'next/image'
+import { products, site } from '@/lib/site'
 
-const products = [
-  {
-    name: 'Pulswärmer',
-    description: 'Kuschelig warm für kalte Tage – in vielen liebevollen Mustern.',
-    image: '/images/pulswaermer.jpeg',
-    alt: 'Handgestrickte Pulswärmer mit rot-weißem Norwegermuster an den Händen',
-  },
-  {
-    name: 'Mützen',
-    description: 'Weiche, warme Mützen in fröhlichen Farben für jeden Kopf.',
-    image: '/images/muetzen.jpeg',
-    alt: 'Vier handgestrickte Mützen in Rot, Pink, Senfgelb und Beere',
-  },
-  {
-    name: 'Decken',
-    description: 'Gemütliche Häkeldecken mit fröhlichen Blütenmotiven.',
-    image: '/images/decke.jpeg',
-    alt: 'Bunte gehäkelte Granny-Square-Decke mit Blütenmuster',
-  },
-  {
-    name: 'Lesezeichen',
-    description: 'Kleine gehäkelte Begleiter für deine liebsten Bücher.',
-    image: '/images/lesezeichen.jpeg',
-    alt: 'Gehäkeltes Blumen-Lesezeichen auf einer Grußkarte',
-  },
+/**
+ * Vier Karten mit kurzer Karten-Beschreibung; Bild, Alt-Text und Geschenk-Hinweis
+ * kommen aus den zentralen Produktdaten in lib/site.
+ */
+const cardCopy = [
+  { slug: 'pulswaermer', description: 'Kuschelig warm für kalte Tage – in vielen liebevollen Mustern.' },
+  { slug: 'muetzen', description: 'Weiche, warme Mützen in fröhlichen Farben für jeden Kopf.' },
+  { slug: 'decken', description: 'Gemütliche Häkeldecken mit fröhlichen Blütenmotiven.' },
+  { slug: 'lesezeichen', description: 'Kleine gehäkelte Begleiter für deine liebsten Bücher.' },
 ]
+
+const cards = cardCopy.flatMap(({ slug, description }) => {
+  const product = products.find((p) => p.slug === slug)
+  return product ? [{ ...product, description }] : []
+})
 
 export function Offerings() {
   return (
-    <section id="angebot" className="px-5 py-16 sm:py-24">
+    <section id="angebot" className="px-5 py-16 sm:py-24" aria-labelledby="angebot-heading">
       <div className="mx-auto max-w-5xl">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
             Was ich anbiete
           </p>
-          <h2 className="mt-3 font-serif text-3xl font-medium text-foreground text-balance sm:text-4xl">
+          <h2
+            id="angebot-heading"
+            className="mt-3 font-serif text-3xl font-medium text-foreground text-balance sm:text-4xl"
+          >
             Von Hand gefertigt – kein Massenprodukt, ein echtes Unikat
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-muted-foreground text-pretty">
@@ -47,9 +40,9 @@ export function Offerings() {
         </div>
 
         <ul className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {products.map((product) => (
+          {cards.map((product) => (
             <li
-              key={product.name}
+              key={product.slug}
               className="group overflow-hidden rounded-2xl border border-border bg-card"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -68,10 +61,26 @@ export function Offerings() {
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {product.description}
                 </p>
+                <p className="mt-2 text-xs leading-relaxed text-muted-foreground/80">
+                  Handgefertigt in Ahrensburg · {product.giftHint}
+                </p>
               </div>
             </li>
           ))}
         </ul>
+
+        <p className="mt-10 text-center text-sm text-muted-foreground">
+          Alle aktuell verfügbaren Unikate findest du im{' '}
+          <a
+            href={site.etsyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-primary underline-offset-4 hover:underline"
+          >
+            Etsy-Shop von PrinzessinWollhausen
+          </a>
+          .
+        </p>
       </div>
     </section>
   )

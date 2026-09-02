@@ -3,39 +3,42 @@ import Image from 'next/image'
 const shots = [
   {
     image: '/images/g-herz.jpeg',
-    alt: 'Pulswärmer mit grün-pinkem Herzchenmuster an den Händen',
+    alt: 'Handgestrickte Pulswärmer mit grün-pinkem Herzchenmuster an den Händen',
   },
   {
     image: '/images/g-collage.jpeg',
-    alt: 'Verschiedene handgestrickte Pulswärmer in Gelb, Rosa, Beere und Braun',
+    alt: 'Collage verschiedener handgestrickter Pulswärmer in Gelb, Rosa, Beere und Braun',
   },
   {
     image: '/images/g-regenbogen.jpeg',
-    alt: 'Bunt gestreifte Pulswärmer in Regenbogenfarben an den Händen',
+    alt: 'Bunt gestreifte handgestrickte Pulswärmer in Regenbogenfarben an den Händen',
   },
   {
     image: '/images/g-tulpe.jpeg',
-    alt: 'Gestrickte Stulpen mit gelb-grünem Tulpenmuster',
+    alt: 'Handgestrickte Stulpen mit gelb-grünem Tulpenmuster und Zackenrand',
   },
   {
     image: '/images/g-diamant.jpeg',
-    alt: 'Pulswärmer mit beerenfarbenem Rautenmuster',
+    alt: 'Handgestrickte Pulswärmer mit beerenfarbenem Rautenmuster',
   },
   {
     image: '/images/g-tulpe2.jpeg',
-    alt: 'Gestrickte Stulpen mit pink-grünem Tulpenmuster',
+    alt: 'Handgestrickte Stulpen mit pink-grünem Tulpenmuster',
   },
 ]
 
 export function Gallery() {
   return (
-    <section id="galerie" className="bg-secondary/50 px-5 py-16 sm:py-24">
+    <section id="galerie" className="bg-secondary/50 px-5 py-16 sm:py-24" aria-labelledby="galerie-heading">
       <div className="mx-auto max-w-5xl">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
             Einblicke
           </p>
-          <h2 className="mt-3 font-serif text-3xl font-medium text-foreground text-balance sm:text-4xl">
+          <h2
+            id="galerie-heading"
+            className="mt-3 font-serif text-3xl font-medium text-foreground text-balance sm:text-4xl"
+          >
             Jedes Muster mit Liebe gestrickt
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-muted-foreground text-pretty">
