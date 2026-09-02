@@ -4,8 +4,9 @@
  * gemeinsam genutzt, damit alle Angaben konsistent bleiben.
  */
 
+/** Produktions-Domain; per NEXT_PUBLIC_SITE_URL überschreibbar (z. B. für Previews). */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://prinzessin-wollhausen.vercel.app'
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.prinzessinwollhausen.com'
 ).replace(/\/$/, '')
 
 export const site = {
