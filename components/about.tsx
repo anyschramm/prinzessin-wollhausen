@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Heart } from './logo-mark'
+import { Heart } from '@/components/logo-mark'
 
 const badges = [
   { title: 'Handgemacht', text: 'mit ganz viel Liebe' },
@@ -10,12 +10,12 @@ const badges = [
 
 export function About() {
   return (
-    <section id="ueber-mich" className="bg-secondary/50 px-5 py-16 sm:py-24">
+    <section id="ueber-mich" className="bg-secondary/50 px-5 py-16 sm:py-24" aria-labelledby="ueber-mich-heading">
       <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-border lg:mx-0">
           <Image
             src="/images/ueber-mich.jpeg"
-            alt="Bunt gehäkeltes Tuch und Häkelarbeit von PrinzessinWollhausen in Arbeit"
+            alt="Any von PrinzessinWollhausen häkelt ein buntes Tuch – Handarbeit aus Ahrensburg in Arbeit"
             fill
             sizes="(max-width: 1024px) 100vw, 40vw"
             className="object-cover"
@@ -26,19 +26,25 @@ export function About() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
             Über mich
           </p>
-          <h2 className="mt-3 font-serif text-3xl font-medium text-foreground text-balance sm:text-4xl">
+          <h2
+            id="ueber-mich-heading"
+            className="mt-3 font-serif text-3xl font-medium text-foreground text-balance sm:text-4xl"
+          >
             Ich bin Any – und das ist meine Leidenschaft
           </h2>
           <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground text-pretty">
             <p>
               Ich stricke und häkle seit vielen Jahren mit Leidenschaft. Aus
-              dieser Leidenschaft ist Prinzessin Wollhausen entstanden – mein
-              kleines Label aus Ahrensburg in Schleswig-Holstein.
+              dieser Leidenschaft ist PrinzessinWollhausen entstanden – mein
+              kleines Handmade-Label aus Ahrensburg in Schleswig-Holstein, bei
+              Hamburg.
             </p>
             <p>
               Ich wähle Garne und Muster mit viel Sorgfalt aus und lege großen
               Wert darauf, dass jedes Stück nicht nur schön, sondern auch
-              hochwertig verarbeitet ist.
+              hochwertig verarbeitet ist. Jeder Pulswärmer, jede Mütze und jede
+              Decke entsteht in kleiner Stückzahl von Hand – deshalb ist jedes
+              Stück ein Unikat.
             </p>
           </div>
 

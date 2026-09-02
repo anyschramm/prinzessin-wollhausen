@@ -22,25 +22,10 @@ export const homeKeywords = [
   'Unikat Geschenk handgemacht',
 ]
 
-type HomeMetadataOptions = {
-  /** Pfad der Seite, z. B. "/" oder "/redesign/a" */
-  path: string
-  /**
-   * Vorschau-Varianten werden nicht indexiert und verweisen kanonisch auf die
-   * Startseite, damit kein Duplicate Content entsteht. Wird eine Variante
-   * zur echten Startseite, einfach `preview: false` setzen.
-   */
-  preview?: boolean
-  titleSuffix?: string
-}
-
-export function buildHomeMetadata({
-  path,
-  preview = false,
-  titleSuffix,
-}: HomeMetadataOptions): Metadata {
-  const title = titleSuffix ? `${homeTitle} – ${titleSuffix}` : homeTitle
-  const canonical = preview ? '/' : path
+/** Vollständige, indexierbare Metadaten der Startseite (Canonical: "/"). */
+export function buildHomeMetadata(): Metadata {
+  const title = homeTitle
+  const canonical = '/'
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -51,9 +36,7 @@ export function buildHomeMetadata({
     creator: site.name,
     publisher: site.name,
     alternates: { canonical },
-    robots: preview
-      ? { index: false, follow: true }
-      : { index: true, follow: true, 'max-image-preview': 'large' },
+    robots: { index: true, follow: true, 'max-image-preview': 'large' },
     openGraph: {
       type: 'website',
       locale: 'de_DE',

@@ -32,36 +32,3 @@ export function PinterestIcon({ className }: IconProps) {
     </svg>
   )
 }
-
-export function HeartIcon({ className }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className}>
-      <path d="M12 21s-6.7-4.35-9.5-8.28C.6 9.9 1.4 6.3 4.4 5.2c2-.73 4 .1 5.1 1.7l.5.75.5-.75c1.1-1.6 3.1-2.43 5.1-1.7 3 1.1 3.8 4.7 1.9 7.52C18.7 16.65 12 21 12 21z" />
-    </svg>
-  )
-}
-
-export function StarIcon({ className }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className}>
-      <path d="M12 2.5l2.95 6.27 6.85.84-5.05 4.72 1.3 6.79L12 17.77l-6.05 3.35 1.3-6.79L2.2 9.61l6.85-.84L12 2.5z" />
-    </svg>
-  )
-}
-
-export function YarnIcon({ className }: IconProps) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.7"
-      strokeLinecap="round"
-      aria-hidden="true"
-      className={className}
-    >
-      <circle cx="11" cy="12" r="8" />
-      <path d="M4.5 8.5c3.5 1 7 1 12 0M3.6 13.5c4 1.2 9 1.2 14 0M6 18.5c3 .8 7 .8 10 0M19 12l3 9" />
-    </svg>
-  )
-}

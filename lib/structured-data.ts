@@ -17,9 +17,7 @@ const ids = {
 
 const abs = (path: string) => `${SITE_URL}${path}`
 
-export function buildHomeJsonLd(pagePath = '/') {
-  const pageUrl = abs(pagePath === '/' ? '' : pagePath)
-
+export function buildHomeJsonLd() {
   const person = {
     '@type': 'Person',
     '@id': ids.person,
@@ -165,7 +163,7 @@ export function buildHomeJsonLd(pagePath = '/') {
   const webpage = {
     '@type': 'WebPage',
     '@id': ids.webpage,
-    url: pageUrl || SITE_URL,
+    url: SITE_URL,
     name: 'PrinzessinWollhausen – Handgemachte Unikate aus Ahrensburg',
     inLanguage: 'de-DE',
     isPartOf: { '@id': ids.website },
