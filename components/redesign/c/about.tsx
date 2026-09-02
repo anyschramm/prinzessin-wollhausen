@@ -13,7 +13,7 @@ export function AboutC() {
           </h2>
           <div className="mt-4 space-y-4 text-lg leading-relaxed text-muted-foreground text-pretty">
             <p>
-              Prinzessin Wollhausen ist mein kleines Handmade-Label aus
+              PrinzessinWollhausen ist mein kleines Handmade-Label aus
               Schleswig-Holstein. Seit vielen Jahren stricke und häkle ich mit
               Leidenschaft – und jedes Stück in meinem Etsy-Shop habe ich
               persönlich gefertigt.

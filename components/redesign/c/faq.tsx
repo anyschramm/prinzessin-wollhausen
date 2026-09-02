@@ -7,7 +7,7 @@ export function FaqC() {
         <div className="max-w-2xl">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Häufige Fragen</p>
           <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-foreground text-balance sm:text-4xl">
-            Fragen & Antworten rund um Prinzessin Wollhausen
+            Fragen & Antworten rund um PrinzessinWollhausen
           </h2>
         </div>
 

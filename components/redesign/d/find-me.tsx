@@ -22,7 +22,7 @@ const channels = [
   },
   {
     name: 'Pinterest',
-    handle: 'Prinzessin Wollhausen',
+    handle: 'PrinzessinWollhausen',
     href: site.pinterestUrl,
     Icon: PinterestIcon,
   },

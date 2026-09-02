@@ -8,8 +8,8 @@ export const homeDescription =
   'Handgemachte Unikate aus Ahrensburg: liebevoll gestrickte Pulswärmer, Mützen, Stirnbänder, gehäkelte Decken und Lesezeichen von Any. Jetzt im Etsy-Shop von PrinzessinWollhausen entdecken.'
 
 export const homeKeywords = [
-  'Prinzessin Wollhausen',
   'PrinzessinWollhausen',
+  'PrinzessinWollhausen Etsy',
   'handgestrickte Pulswärmer',
   'Pulswärmer kaufen',
   'gestrickte Mützen handgemacht',

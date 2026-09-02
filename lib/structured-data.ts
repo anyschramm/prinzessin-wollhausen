@@ -45,7 +45,6 @@ export function buildHomeJsonLd(pagePath = '/') {
     '@type': ['Store', 'LocalBusiness', 'Organization'],
     '@id': ids.store,
     name: site.name,
-    alternateName: site.displayName,
     slogan: site.tagline,
     description:
       'PrinzessinWollhausen ist ein kleines Handmade-Label aus Ahrensburg in Schleswig-Holstein. Any strickt und häkelt von Hand Pulswärmer, Mützen, Stirnbänder, Decken und Lesezeichen – jedes Stück ein Unikat. Verkauf über den Etsy-Shop.',
