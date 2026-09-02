@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import { site } from '@/lib/site'
 import { EtsyIcon, StarIcon } from '@/components/redesign/shared/icons'
+import { productImageStyle } from '@/components/redesign/shared/product-image'
 
-const mosaic: { src: string; alt: string; label: string; position?: string }[] = [
+const mosaic: { src: string; alt: string; label: string; imagePosition?: string; imageScale?: number }[] = [
   { src: '/images/pulswaermer.jpeg', alt: 'Handgestrickte Pulswärmer mit rot-weißem Norwegermuster', label: 'Pulswärmer' },
   { src: '/images/muetzen.jpeg', alt: 'Vier handgestrickte Mützen in Rot, Pink, Senfgelb und Beere', label: 'Mützen' },
-  { src: '/images/decke.jpeg', alt: 'Gehäkelte Granny-Square-Decke mit Blütenmuster', label: 'Decken', position: 'center 62%' },
-  { src: '/images/lesezeichen.jpeg', alt: 'Gehäkeltes Blumen-Lesezeichen auf einer Grußkarte', label: 'Lesezeichen' },
+  { src: '/images/decke.jpeg', alt: 'Gehäkelte Granny-Square-Decke mit Blütenmuster', label: 'Decken', imageScale: 1.2 },
+  { src: '/images/lesezeichen.jpeg', alt: 'Gehäkeltes Blumen-Lesezeichen auf einer Grußkarte', label: 'Lesezeichen', imagePosition: 'center 70%' },
 ]
 
 const bullets = [
@@ -92,7 +93,7 @@ export function HeroC() {
                   fill
                   priority={index < 2}
                   sizes="(max-width: 1024px) 45vw, 22vw"
-                  style={{ objectPosition: tile.position }}
+                  style={productImageStyle(tile)}
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <span className="absolute inset-x-3 bottom-3 flex items-center justify-between rounded-xl bg-background/95 px-3 py-2 text-sm font-bold text-foreground shadow-sm">

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { products, site } from '@/lib/site'
+import { productImageStyle } from '@/components/redesign/shared/product-image'
 
 export function CollectionA() {
   const [lead, ...rest] = products
@@ -49,14 +50,14 @@ export function CollectionA() {
                   className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
               </div>
-              <figcaption className="mt-5 flex items-start justify-between gap-6">
+              <figcaption className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
                 <div>
                   <h3 className="font-serif text-3xl text-foreground">{lead.name}</h3>
                   <p className="mt-2 max-w-md leading-relaxed text-muted-foreground">
                     {lead.description}
                   </p>
                 </div>
-                <span className="mt-2 shrink-0 text-sm font-semibold text-primary underline-offset-4 group-hover:underline">
+                <span className="shrink-0 text-sm font-semibold text-primary underline-offset-4 group-hover:underline sm:mt-2">
                   Auf Etsy ansehen →
                 </span>
               </figcaption>
@@ -78,7 +79,7 @@ export function CollectionA() {
                       alt={product.alt}
                       fill
                       sizes="160px"
-                      style={{ objectPosition: product.imagePosition }}
+                      style={productImageStyle(product)}
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                     />
                   </div>

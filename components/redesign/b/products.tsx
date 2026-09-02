@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { products, site } from '@/lib/site'
 import { HeartIcon } from '@/components/redesign/shared/icons'
+import { productImageStyle } from '@/components/redesign/shared/product-image'
 
 export function ProductsB() {
   return (
@@ -34,7 +35,7 @@ export function ProductsB() {
                     alt={product.alt}
                     fill
                     sizes="(max-width: 640px) 78vw, (max-width: 1024px) 50vw, 33vw"
-                    style={{ objectPosition: product.imagePosition }}
+                    style={productImageStyle(product)}
                     className="object-cover"
                   />
                   <span className="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-bold tracking-wide text-primary shadow-sm">

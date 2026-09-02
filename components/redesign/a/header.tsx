@@ -21,7 +21,7 @@ export function HeaderA() {
             height={46}
             className="h-10 w-10 rounded-full object-cover mix-blend-multiply sm:h-11 sm:w-11"
           />
-          <span className="font-serif text-xl tracking-tight text-foreground sm:text-2xl">
+          <span className="font-serif text-lg tracking-tight text-foreground sm:text-2xl">
             PrinzessinWollhausen
           </span>
         </Link>
@@ -42,9 +42,10 @@ export function HeaderA() {
           href={site.etsyUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex min-h-11 items-center justify-center rounded-sm bg-primary px-5 text-sm font-semibold tracking-wide text-primary-foreground transition-colors hover:bg-berry-deep"
+          className="inline-flex min-h-11 shrink-0 items-center justify-center whitespace-nowrap rounded-sm bg-primary px-4 text-sm font-semibold tracking-wide text-primary-foreground transition-colors hover:bg-berry-deep sm:px-5"
         >
-          Zum Etsy-Shop
+          <span className="hidden sm:inline">Zum Etsy-Shop</span>
+          <span className="sm:hidden">Etsy-Shop</span>
         </a>
       </div>
     </header>

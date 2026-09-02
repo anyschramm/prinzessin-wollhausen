@@ -39,6 +39,8 @@ export type Product = {
   alt: string
   /** CSS object-position, falls ein Bild einen ungünstigen Bildrand hat */
   imagePosition?: string
+  /** Leichter Zoom, um eingebrannte Bildtexte am oberen/unteren Rand auszublenden */
+  imageScale?: number
   category: string
   giftHint: string
 }
@@ -85,7 +87,7 @@ export const products: Product[] = [
       'Die gehäkelten Decken von PrinzessinWollhausen bestehen aus vielen einzelnen Granny Squares mit Blütenmotiven, die von Hand zusammengefügt werden. Eine Decke besteht aus bis zu 247 einzelnen Quadraten und ist ein Kuschelstück für Jahrzehnte.',
     image: '/images/decke.jpeg',
     alt: 'Bunte gehäkelte Granny-Square-Decke mit Blütenmuster über einer weißen Kommode',
-    imagePosition: 'center 62%',
+    imageScale: 1.2,
     category: 'Wohnen',
     giftHint: 'Ein Erbstück zum Einkuscheln',
   },

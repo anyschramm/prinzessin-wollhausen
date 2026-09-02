@@ -11,7 +11,7 @@ export function ClosingB() {
           alt=""
           fill
           sizes="100vw"
-          className="object-cover opacity-25"
+          className="object-cover opacity-20"
         />
         <div className="relative mx-auto max-w-2xl px-6 py-16 text-center sm:px-10 sm:py-20">
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-rose-soft">Bereit zum Kuscheln?</p>
