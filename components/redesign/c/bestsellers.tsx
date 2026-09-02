@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { products, site } from '@/lib/site'
 import { EtsyIcon } from '@/components/redesign/shared/icons'
+import { productImageStyle } from '@/components/redesign/shared/product-image'
 
 const featuredSlugs = ['pulswaermer', 'muetzen', 'decken']
 
@@ -31,7 +32,7 @@ export function BestsellersC() {
                     alt={product.alt}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    style={{ objectPosition: product.imagePosition }}
+                    style={productImageStyle(product)}
                     className="object-cover"
                   />
                   <span className="absolute left-3 top-3 rounded-lg bg-primary px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-primary-foreground">

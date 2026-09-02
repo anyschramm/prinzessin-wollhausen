@@ -17,7 +17,7 @@ export function GiftB() {
                 alt="Gehäkeltes rosa Blumen-Lesezeichen auf einer Grußkarte mit der Aufschrift „Für dich – damit jede Geschichte noch schöner wird“"
                 fill
                 sizes="(max-width: 1024px) 90vw, 40vw"
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
             <div className="absolute -bottom-6 -right-3 w-40 -rotate-3 overflow-hidden rounded-3xl border-4 border-background shadow-card sm:-right-8 sm:w-48">

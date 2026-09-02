@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { products, site } from '@/lib/site'
+import { productImageStyle } from '@/components/redesign/shared/product-image'
 
 export function CategoriesC() {
   return (
@@ -37,7 +38,7 @@ export function CategoriesC() {
                     alt={product.alt}
                     fill
                     sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                    style={{ objectPosition: product.imagePosition }}
+                    style={productImageStyle(product)}
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
