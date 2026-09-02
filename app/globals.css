@@ -45,21 +45,6 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
-
-  /* Zusätzliche Markenakzente für die Redesign-Varianten (additiv) */
-  --color-berry: var(--berry);
-  --color-berry-deep: var(--berry-deep);
-  --color-rose: var(--rose);
-  --color-rose-soft: var(--rose-soft);
-  --color-blush: var(--blush);
-  --color-mustard: var(--mustard);
-  --color-sage: var(--sage);
-  --color-cream: var(--cream);
-  --color-cream-deep: var(--cream-deep);
-  --color-etsy: var(--etsy);
-  --color-etsy-deep: var(--etsy-deep);
-  --shadow-soft: 0 12px 40px -18px oklch(0.35 0.06 20 / 0.35);
-  --shadow-card: 0 1px 2px oklch(0.35 0.06 20 / 0.06), 0 10px 30px -14px oklch(0.35 0.06 20 / 0.25);
 }
 
 :root {
@@ -96,19 +81,6 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-
-  /* Zusätzliche Markenakzente (warme Palette, additiv) */
-  --berry: oklch(0.5 0.13 12);
-  --berry-deep: oklch(0.36 0.1 14);
-  --rose: oklch(0.72 0.11 15);
-  --rose-soft: oklch(0.9 0.05 18);
-  --blush: oklch(0.955 0.02 30);
-  --mustard: oklch(0.78 0.13 80);
-  --sage: oklch(0.7 0.07 130);
-  --cream: oklch(0.985 0.008 75);
-  --cream-deep: oklch(0.95 0.015 70);
-  --etsy: oklch(0.66 0.19 40);
-  --etsy-deep: oklch(0.58 0.18 38);
 }
 
 .dark {
@@ -200,42 +172,7 @@
   }
 }
 
-/* Hilfsklassen für die Redesign-Varianten (additiv) */
-@utility scrollbar-hidden {
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-@utility stitch-border {
-  /* gepunktete "Nahtlinie" als dekorativer Rahmen */
-  outline: 2px dashed color-mix(in oklch, var(--primary) 45%, transparent);
-  outline-offset: -10px;
-}
-
-@utility pattern-dots {
-  background-image: radial-gradient(
-    color-mix(in oklch, var(--primary) 14%, transparent) 1px,
-    transparent 1px
-  );
-  background-size: 18px 18px;
-}
-
-@utility pattern-knit {
-  background-image:
-    repeating-linear-gradient(
-      135deg,
-      color-mix(in oklch, var(--primary) 6%, transparent) 0 2px,
-      transparent 2px 14px
-    ),
-    repeating-linear-gradient(
-      45deg,
-      color-mix(in oklch, var(--primary) 6%, transparent) 0 2px,
-      transparent 2px 14px
-    );
-}
-
+/* Aufklappbare FAQ-Einträge: Standard-Marker ausblenden, Pfeil bei geöffnetem Eintrag drehen */
 details.faq-item > summary {
   list-style: none;
 }

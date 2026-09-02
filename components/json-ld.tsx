@@ -1,7 +1,7 @@
 import { buildHomeJsonLd } from '@/lib/structured-data'
 
-export function HomeJsonLd({ pagePath = '/' }: { pagePath?: string }) {
-  const data = buildHomeJsonLd(pagePath)
+export function HomeJsonLd() {
+  const data = buildHomeJsonLd()
   return (
     <script
       type="application/ld+json"

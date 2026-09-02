@@ -1,12 +1,10 @@
 import { faq, site } from '@/lib/site'
 
 /**
- * Variante D – neuer FAQ-Bereich vor dem Footer (die zentrale GEO-Ergänzung).
- * Optik folgt den bestehenden Sektionen: Eyebrow, Serifen-H2, Karten mit
- * border/rounded-2xl. Fragen und Antworten kommen aus lib/site und sind
- * identisch mit dem FAQPage-JSON-LD.
+ * Fragen und Antworten kommen aus lib/site und sind identisch mit dem
+ * FAQPage-JSON-LD, damit sichtbarer Inhalt und strukturierte Daten übereinstimmen.
  */
-export function FaqD() {
+export function Faq() {
   return (
     <section id="fragen" className="bg-secondary/50 px-5 py-16 sm:py-24" aria-labelledby="fragen-heading">
       <div className="mx-auto max-w-3xl">

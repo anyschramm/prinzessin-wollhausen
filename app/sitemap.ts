@@ -1,8 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/site'
 
-// Die Redesign-Vorschauen unter /redesign sind bewusst nicht enthalten
-// (noindex), damit kein Duplicate Content zur Startseite entsteht.
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date()
   return [

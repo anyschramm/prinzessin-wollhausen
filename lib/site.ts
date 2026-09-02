@@ -1,7 +1,7 @@
 /**
  * Zentrale Fakten und Inhalte der Marke PrinzessinWollhausen.
- * Wird von den Redesign-Varianten, den Metadaten und den JSON-LD-Daten
- * (SEO/GEO) gemeinsam genutzt, damit alle Angaben konsistent bleiben.
+ * Wird von der Startseite, den Metadaten und den JSON-LD-Daten (SEO/GEO)
+ * gemeinsam genutzt, damit alle Angaben konsistent bleiben.
  */
 
 export const SITE_URL = (
@@ -36,10 +36,6 @@ export type Product = {
   description: string
   image: string
   alt: string
-  /** CSS object-position, falls ein Bild einen ungünstigen Bildrand hat */
-  imagePosition?: string
-  /** Leichter Zoom, um eingebrannte Bildtexte am oberen/unteren Rand auszublenden */
-  imageScale?: number
   category: string
   giftHint: string
 }
@@ -86,7 +82,6 @@ export const products: Product[] = [
       'Die gehäkelten Decken von PrinzessinWollhausen bestehen aus vielen einzelnen Granny Squares mit Blütenmotiven, die von Hand zusammengefügt werden. Eine Decke besteht aus bis zu 247 einzelnen Quadraten und ist ein Kuschelstück für Jahrzehnte.',
     image: '/images/decke.jpeg',
     alt: 'Bunte gehäkelte Granny-Square-Decke mit Blütenmuster über einer weißen Kommode',
-    imageScale: 1.2,
     category: 'Wohnen',
     giftHint: 'Ein Erbstück zum Einkuscheln',
   },
@@ -100,91 +95,6 @@ export const products: Product[] = [
     alt: 'Gehäkeltes rosa Blumen-Lesezeichen mit grünem Blatt auf einer Grußkarte',
     category: 'Kleine Geschenke',
     giftHint: 'Das perfekte Mitbringsel für Leseratten',
-  },
-]
-
-export const galleryShots = [
-  {
-    image: '/images/g-herz.jpeg',
-    alt: 'Handgestrickte Pulswärmer mit grün-pinkem Herzchenmuster an den Händen',
-    caption: 'Herzchen & Ranken',
-  },
-  {
-    image: '/images/g-regenbogen.jpeg',
-    alt: 'Bunt gestreifte handgestrickte Pulswärmer in Regenbogenfarben an den Händen',
-    caption: 'Regenbogen-Verlauf',
-  },
-  {
-    image: '/images/g-tulpe.jpeg',
-    alt: 'Handgestrickte Stulpen mit gelb-grünem Tulpenmuster',
-    caption: 'Tulpen in Gelb',
-  },
-  {
-    image: '/images/g-diamant.jpeg',
-    alt: 'Handgestrickte Pulswärmer mit beerenfarbenem Rautenmuster',
-    caption: 'Rauten in Beere',
-  },
-  {
-    image: '/images/g-tulpe2.jpeg',
-    alt: 'Handgestrickte Stulpen mit pink-grünem Tulpenmuster',
-    caption: 'Tulpen in Pink',
-  },
-  {
-    image: '/images/g-collage.jpeg',
-    alt: 'Collage verschiedener handgestrickter Pulswärmer in Gelb, Rosa, Beere und Braun',
-    caption: 'Muster-Vielfalt',
-  },
-]
-
-export const trustSignals = [
-  {
-    title: 'Von Hand gefertigt',
-    text: 'Jedes Stück entsteht Masche für Masche in meiner Werkstatt in Ahrensburg – kein Massenprodukt.',
-  },
-  {
-    title: 'Echtes Unikat',
-    text: 'Kein Stück gleicht dem anderen. Was du kaufst, gibt es genau so nur einmal.',
-  },
-  {
-    title: 'Liebevoll verpackt',
-    text: 'Jede Bestellung wird sorgfältig und hübsch verpackt – direkt bereit zum Verschenken.',
-  },
-  {
-    title: 'Nachhaltig & bewusst',
-    text: 'Sorgfältig ausgewählte Garne, langlebige Verarbeitung und Fertigung in kleinen Stückzahlen.',
-  },
-  {
-    title: 'Made in Germany',
-    text: 'Entworfen, gestrickt, gehäkelt und verschickt aus Schleswig-Holstein.',
-  },
-  {
-    title: 'Kleines Business',
-    text: 'Mit jedem Kauf unterstützt du eine Handarbeiterin aus der Region statt eines Konzerns.',
-  },
-]
-
-/**
- * Platzhalter für echte Etsy-Bewertungen. Bitte durch Originalzitate aus dem
- * Etsy-Shop ersetzen, bevor eine Variante live geht.
- */
-export const testimonials = [
-  {
-    quote:
-      'Die Pulswärmer sind wunderschön verarbeitet und noch kuscheliger als auf den Fotos. Super liebevoll verpackt – ein perfektes Geschenk!',
-    name: 'Etsy-Kundin',
-    detail: 'Bewertung im Etsy-Shop',
-  },
-  {
-    quote:
-      'Ich habe die Mütze für meine Mutter bestellt und sie trägt sie jeden Tag. Man merkt einfach, dass hier mit Herz gearbeitet wird.',
-    name: 'Etsy-Kundin',
-    detail: 'Bewertung im Etsy-Shop',
-  },
-  {
-    quote:
-      'Schneller Versand, tolle Kommunikation und ein Unikat, das man so nirgendwo kaufen kann. Sehr gerne wieder!',
-    name: 'Etsy-Kundin',
-    detail: 'Bewertung im Etsy-Shop',
   },
 ]
 
@@ -223,20 +133,5 @@ export const faq = [
     question: 'Wer steckt hinter PrinzessinWollhausen?',
     answer:
       'Hinter PrinzessinWollhausen steht Any aus Ahrensburg bei Hamburg. Aus ihrer langjährigen Leidenschaft fürs Stricken und Häkeln ist das kleine Label entstanden. Sie wählt Garne und Muster selbst aus und fertigt jedes Stück persönlich.',
-  },
-]
-
-export const purchaseSteps = [
-  {
-    title: 'Aussuchen',
-    text: 'Stöbere in meinem Etsy-Shop durch alle aktuellen Unikate.',
-  },
-  {
-    title: 'Sicher bestellen',
-    text: 'Bezahle bequem über Etsy – mit Käuferschutz und allen gängigen Zahlungsarten.',
-  },
-  {
-    title: 'Freuen',
-    text: 'Ich verpacke dein Stück liebevoll und verschicke es aus Ahrensburg zu dir.',
   },
 ]
