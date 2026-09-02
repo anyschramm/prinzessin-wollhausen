@@ -216,11 +216,6 @@ export const faq = [
       'Der Versand erfolgt aus Deutschland über meinen Etsy-Shop. Vorrätige Unikate verschicke ich in der Regel innerhalb weniger Werktage. Die genauen Versandzeiten, Kosten und Optionen findest du bei jedem Artikel auf Etsy.',
   },
   {
-    question: 'Kann ich ein Stück in einer bestimmten Farbe oder Größe anfragen?',
-    answer:
-      'Gerne. Schreib mir einfach über Etsy oder Instagram (@prinzessinwollhausen), welche Farbe, welches Muster oder welche Größe du dir wünschst. Viele Stücke fertige ich auf Wunsch an.',
-  },
-  {
     question: 'Wie pflege ich handgestrickte Wollsachen richtig?',
     answer:
       'Handgestrickte Stücke am besten per Hand in lauwarmem Wasser mit Wollwaschmittel waschen, nicht wringen und liegend trocknen lassen. So bleiben Form und Farben lange schön.',
